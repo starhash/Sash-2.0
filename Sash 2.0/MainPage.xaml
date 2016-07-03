@@ -1,0 +1,19 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sash_2._0"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Layout="using:DevExpress.UI.Xaml.Layout" xmlns:Editors="using:DevExpress.UI.Xaml.Editors"
+    xmlns:Controls="using:DevExpress.UI.Xaml.Controls"
+    x:Class="Sash_2._0.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Layout:PageView>
+            <Layout:PageViewItem x:Name="home" Header="Home" FontSize="16" MinWidth="32" MaxWidth="128" Height="32" Padding="8,5">
+                <local:WebPageTab Margin="0" NavigationCompleted="WebPageTab_NavigationCompleted_1" NavigationFailed="WebPageTab_NavigationFailed" NavigationStarting="WebPageTab_NavigationStarting"/>
+            </Layout:PageViewItem>
+        </Layout:PageView>
+    </Grid>
+</Page>
